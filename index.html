@@ -6,126 +6,142 @@
     <title>Nerds</title>
 </head>
 <body>
-  <header class="main-header">
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img class="page-header__logo-image" src="img/index-logo.svg" height="155px" width="371px" alt="">
+    </a>
+    <nav class="main-nav">
 
-    <nav class="main-navigation">
-      <a class="main-header-logo">
-        <img src="img/index-logo.svg" height="155px" width="371px" alt="Логотип барбершопа " Бородинский"">
-      </a>
-      <ul class="main-navigation--list">
-        <li class="main-navigation--item"><a href="#" class="main-navigation--link">Студия</a></li>
-        <li class="main-navigation--item"><a href="#" class="main-navigation--link">Клиенты</a></li>
-        <li class="main-navigation--item"><a href="#" class="main-navigation--link">Магазин</a></li>
-        <li class="main-navigation--item"><a href="#" class="main-navigation--link">Контакты</a></li>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item--active"><a href="#" class="site-list__link">Студия</a></li>
+        <li class="site-list__item"><a href="#" class="site-list__link">Клиенты</a></li>
+        <li class="site-list__item"><a href="#" class="site-list__link">Магазин</a></li>
+        <li class="site-list__item"><a href="#" class="site-list__link">Контакты</a></li>
       </ul>
-      <ul class="main-navigation--basket">
-        <li class="main-navigation--list"><a href="#" class="main-navigation--link">Корзина</a></li>
+      <ul class="main-nav__list user-list ">
+        <li class="user-list__item"><a href="#" class="user-list_basket">Корзина</a></li>
       </ul>
     </nav>
+
     <section class="slider">
-      <div class="slider--wrapper">
-        <p class="slider--info">
-          <h3 class="slider--info-article"></h3>
-          <p class="slider--info-text"></p>
-          <a href="" class="slider--info-link"></a>
+      <div class="slider__wrapper">
+        <p class="slider__info">
+          <h3 class="slider__info-title">Долго, дорого,
+            скрупулезно.</h3>
+          <p class="slider__info-text">Математически выверенный дизайн
+            для вашего сайта или мобильного приложения.</p>
+          <a href="" class="slider__info-link">Узнать больше</a>
         </p>
+        <img class="slidet__img" href="/img/slide1.svg">
       </div>
-      <div class="slider--wrapper">
-        <p class="slider--info">
-          <h3 class="slider--info-article"></h3>
-          <p class="slider--info-text"></p>
-          <a href="" class="slider--info-link"></a>
+      <div class="slider__wrapper">
+        <p class="slider__info">
+          <h3 class="slider__info-title">Любит математику как никто другой</h3>
+          <p class="slider__info-text">Никакого креатива, только математические формулы
+            для расчета идеальных пропорций.</p>
+          <a href="" class="slider__info-link">Узнать больше</a>
         </p>
+        <img class="slidet__img" href="/img/slide2.svg">
       </div>
-      <div class="slider--wrapper">
-        <p class="slider--info">
-          <h3 class="slider--info-article"></h3>
-          <p class="slider--info-text"></p>
-          <a href="" class="slider--info-link"></a>
+      <div class="slider__wrapper">
+        <p class="slider__info">
+          <h3 class="slider__info-title">Только ночь, только хардкор</h3>
+          <p class="slider__info-text">Работать днем, как все? Мы против этого.
+            Ближе к полуночи работа только начинается.</p>
+          <a href="" class="slider__info-link">Узнать больше</a>
         </p>
+        <img class="slidet__img" href="/img/slide3.svg">
       </div>
     </section>
   </header>
 
 
-  <main class="container">
+  <main class="page-main">
     <h1 class="visually-hidden">
       Дизайн студия Nerds
     </h1>
     <section class="features">
       <h2 class="visually-hidden">То, что мы можем</h2>
-      <ul class="features--list">
-        <li class="features--item">
-          <img src="" alt="" class="features--image">
-          <h3 class="features--article">Веб-Сайты</h3>
-          <p class="features--text"></p>
-          <button class="features--button"></button>
+      <ul class="features__list">
+        <li class="features__item">
+          <img src="" alt="" class="features__image">
+          <h3 class="features__title">Веб-Сайты</h3>
+          <p class="features__text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <button class="features__button"></button>
         </li>
-        <li class="features--item">
-          <img src="" alt="" class="features--image">
-          <h3 class="features--article">Приложения</h3>
-          <p class="features--text"></p>
-          <button class="features--button"></button>
+        <li class="features__item">
+          <img src="" alt="" class="features__image">
+          <h3 class="features__title">Приложения</h3>
+          <p class="features__text">Покорите топ-10 приложений в AppStore и Google Play</p>
+          <button class="features__button"></button>
         </li>
-        <li class="features--item">
-          <img src="" alt="" class="features--image">
-          <h3 class="features--article">Презентации</h3>
-          <p class="features--text"></p>
-          <button class="features--button"></button>
+        <li class="features__item">
+          <img src="" alt="" class="features__image">
+          <h3 class="features__title">Презентации</h3>
+          <p class="features__text">Вы даже не подозреваете,
+            насколько вы изумительны!</p>
+          <button class="features__button"></button>
         </li>
       </ul>
     </section>
     <div class="index-colums">
       <section class="about">
-        <h2 class="about--article"></h2>
-        <p class="about--text">
-
+        <h2 class="about__title">Мы — маленькая, но гордая
+          дизайн-студия из Краснодара. </h2>
+        <p class="about__text">
+          Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+превыше креатива. Работаем не покладая рук, как роботы.
         </p>
-        <ul class="about--list">
-          <li class="about--item"></li>
-          <li class="about--item"></li>
-          <li class="about--item"></li>
+        <h3 class="about__doit">Выполняем заказы на разработку:</h3>
+        <ul class="about__list">
+          <li class="about__item"><span>Веб-сайтов любой сложности</span></li>
+          <li class="about__item"><span>Мобильных приложений для iOS и Android</span></li>
+          <li class="about__item"><span>Слайдшоу и видео для корпоративных презентаций</span></li>
         </ul>>
       </section>
       <section class="company">
-        <img src="" alt="" class="company-logo">
-        <p></p>
-        <ul class="company--list">
-          <li class="company--item"></li>
-          <li class="company--item"></li>
-          <li class="company--item"></li>
+        <img src="/img/nerds-illustration.jpg" alt="Логотип nerds с радостным фоном" class="company__logo">
+        <h3 class="company__title">с 2004 года Любим точность во всем:</h3>
+        <ul class="company__list">
+          <li class="company__item">
+            <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+          </li>
+          <li class="company__item"></li>
+          <li class="company__item"></li>
         </ul>>
       </section>
       </div>
     <section class="projects">
-      <img src="" alt="" class="projects--logo">
-      <img src="" alt="" class="projects--logo">
-      <img src="" alt="" class="projects--logo">
-      <img src="" alt="" class="projects--logo">
+      <ul class="projects__list">
+        <li class="projects__item"><a href="#" class="projects__link"><img src="" alt="" class="ptojects__logo"></a></li>
+        <li class="projects__item"><a href="#" class="projects__link"><img src="" alt="" class="ptojects__logo"></a></li>
+        <li class="projects__item"><a href="#" class="projects__link"><img src="" alt="" class="ptojects__logo"></a></li>
+        <li class="projects__item"><a href="#" class="projects__link"><img src="" alt="" class="ptojects__logo"></a></li>
+      </ul>
     </section>
     <section class="contacts">
-      <h2>NЁRDS DESIGN STUDIO</h2>
-      <p>
+      <h2 class="contacts__title">NЁRDS DESIGN STUDIO</h2>
+      <p class="contacts__adress">
         191186, Санкт-Петербург,
         ул. Б. Конюшенная, д. 19/8
 
       </p>
-      <p>
+      <p class="contacts__phone">
         тел. +7 (812) 275-75-75
       </p>
-      <button class="button contacts-button-map" type="button">Напишите нам</button>
+      <button class="button contacts__button" type="button">Напишите нам</button>
   </section>
     <footer class="main-footer">
         <ul class="social-button">
-          <li class="social-button--item"><a href="#" class="social-bottom--link"><img src="" alt="" class="social-bottom--icon"></a></li>
-          <li class="social-button--item"><a href="#" class="social-bottom--link"><img src="" alt="" class="social-bottom--icon"></a></li>
-          <li class="social-button--item"><a href="#" class="social-bottom--link"><img src="" alt="" class="social-bottom--icon"></a></li>
+          <li class="social-button__item"><a href="#" class="social-bottom__link"><img src="" alt="" class="social-bottom__icon"></a></li>
+          <li class="social-button__item"><a href="#" class="social-bottom__link"><img src="" alt="" class="social-bottom__icon"></a></li>
+          <li class="social-button__item"><a href="#" class="social-bottom__link"><img src="" alt="" class="social-bottom__icon"></a></li>
         </ul>
         <p class="promo">
-          <h3 class="promo--aricle">
+          <h3 class="promo__aricle">
 
           </h3>
-          <span class="promo--text">
+          <span class="promo__text">
 
           </span>
         </p>
