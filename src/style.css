@@ -333,6 +333,19 @@ input[type="radio"].visually-hidden {
   margin-bottom: 0;
 }
 
+.about__span {
+  position: relative;
+}
+.about__span::before {
+  content:"";
+  position: absolute;
+  width: 26px;
+  height: 2px;
+  top: 8px;
+  left: -35px;
+  background-color:#fb565a;
+}
+
 .company {
   width: 360px;
 
@@ -358,7 +371,7 @@ input[type="radio"].visually-hidden {
 
 .company__list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -367,8 +380,10 @@ input[type="radio"].visually-hidden {
 .company__item {
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items:flex-start;
   text-align: left;
+
+  width: 120px;
 }
 
 .company__percent{
@@ -390,3 +405,47 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   font-weight: 700;
 }
+
+.projects {
+  border-bottom: 2px solid #eeeeee;
+  display: flex;
+  flex-wrap: wrap;
+  align-items:center;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 180px;
+}
+
+.projects__item {
+  margin: 0;
+  padding: 0;
+  width: 290px;
+  height: 100px;
+
+  
+}
+.projects__link {
+  position: relative;
+  display: flex;
+  text-align: center;
+  align-items:center;
+}
+.ptojects__logo {
+
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ptojects__link::after{
+  content:"";
+  position: absolute;
+  width: 2px;
+  height: 26px;
+  top:0px;
+  left:0px;
+  background-color: #eeeeee;
+}
+
+
