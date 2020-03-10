@@ -30,7 +30,7 @@
       </div>
       <h1 class="title">Магазин готовых шаблонов</h1>
   </header>
-  <div class="index-column">
+  <div class="index-column page-container">
     <section class="filter">
 
       <fieldset>
@@ -86,7 +86,22 @@
     <section class="catalog">
       <h2 class="visually-hidden">Список сайтов</h2>
       <div class="catalog__sort">
+        <h3 class="catalog__name">Сортировать:</h3>
+        <ul class="catalog__sort-list">
+          <li class="catalog__sort-item"><button type="submit" class="catalog__choise">По цене</button></li>
+          <li class="catalog__sort-item"><button type="submit" class="catalog__choise">По типу</button></li>
+          <li class="catalog__sort-item"><button type="submit" class="catalog__choise">По названию</button></li>
+        </ul>
+        <div class="arrow_container">
+          <button class="increase" type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
 
+          </button>
+          
+          <button class="decrease arrow-active" type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
+          </button>
+      </div>
       </div>
       <ul class="catalog__list">
         <li class="catalog__item">

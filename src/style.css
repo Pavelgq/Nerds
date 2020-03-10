@@ -803,3 +803,40 @@ input[type="radio"].visually-hidden {
   margin-top: 45px;
 }
 
+/*shop*/
+
+.index-column {
+  display: flex;
+  flex-direction: row;
+}
+.filter{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+}
+.catalog {
+  display: flex;
+  flex-direction: column;
+}
+.catalog__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  list-style: none;
+}
+.pagination__list{
+  display: flex;
+
+  list-style: none;
+}
+
+.catalog__sort {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog__sort-list {
+  display: flex;
+
+  list-style: none;
+}
