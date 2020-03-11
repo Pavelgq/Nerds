@@ -32,9 +32,31 @@
   </header>
   <div class="index-column page-container">
     <section class="filter">
-
-      <fieldset>
-        <legend>Сетка:</legend>
+      <fieldset class="filter__group">
+        <legend class="filter__group-title">Стоимость:</legend>
+        <div class="filter-slider">
+          <div class="filter-slider__range">
+            <div class="filter-slider__bar"></div>
+            <label class="filter-slider__item filter-slider__item-min" for="filter-price-min">
+              <span class="visually-hidden">минимальная</span>
+            </label>
+            <div class="filter-slider__bar--center"></div>
+            <label class="filter-slider__item filter-slider__item-max" for="filter-price-max">
+              <span class="visually-hidden">максимальная</span>
+            </label>
+          </div>
+        </div>
+        <div class="filter__price">
+          <div class="filter__price-col">
+            от <input class="filter__price-input input-reset" id="filter-price-min" name="price-min" type="number" min="0" max="15000" step="100" value="2200">
+          </div>
+          <div class="filter__price-col">
+            до <input class="filter__price-input input-reset" id="filter-price-max" name="price-max" type="number" min="0" max="15000" step="100" value="15000">
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="filter__group">
+        <legend class="filter__group-title">Сетка:</legend>
         <li class="filter__option">
           <input class="visually-hidden filter-input filter-input__radio" type="radio" name="adaptive"
             id="filter-adaptive" checked>
@@ -52,8 +74,8 @@
         </li>
       </fieldset>
 
-      <fieldset>
-        <legend>Особенности:</legend>
+      <fieldset class="filter__group">
+        <legend class="filter__group-title">Особенности:</legend>
         <li class="filter__option">
           <input class="visually-hidden filter-input filter-input__checkbox" type="checkbox" name="slider"
             id="filter-slider" checked>
@@ -105,34 +127,58 @@
       </div>
       <ul class="catalog__list">
         <li class="catalog__item">
-          <h3 class="catalog__title">Sedona</h3>
-          <p class="catalog__text">Информационный сайт для туристов</p>
-          <button type="submit" class="catalog__button">9 900 руб.</button>
+          <img src="svg/browser.svg" alt="Декоративный элемент имитирующий онко браузера" width="360" height="40" class="catalog__browser">
+          <img src="img/img-sedona.jpg.jpg" alt="Sedona" width="360" height="576" class="catalog__image">
+          <div class="catalog__hidden catalog__wrapper">
+            <h3 class="catalog__title">Sedona</h3>
+            <p class="catalog__text">Информационный сайт для туристов</p>
+            <button type="submit" class="catalog__button button">9 900 руб.</button>
+          </div>
         </li>
         <li class="catalog__item">
+          <img src="svg/browser.svg" alt="Декоративный элемент имитирующий онко браузера" width="360" height="40" class="catalog__browser">
+          <img src="img/img-pink.jpg.jpg" alt="Pink" width="360" height="576" class="catalog__image">
+          <div class="catalog__hidden catalog__wrapper">
           <h3 class="catalog__title">Pink App</h3>
           <p class="catalog__text">Продуктовый лендинг приложения для iOS и Android</p>
-          <button type="submit" class="catalog__button">9 900 руб.</button>
+          <button type="submit" class="catalog__button button">9 900 руб.</button>
+          </div>
         </li>
         <li class="catalog__item">
+          <img src="svg/browser.svg" alt="Декоративный элемент имитирующий онко браузера" width="360" height="40" class="catalog__browser">
+          <img src="img/img-barbershop.jpg.jpg" alt="Barbershop" width="360" height="576" class="catalog__image">
+          <div class="catalog__hidden catalog__wrapper">
           <h3 class="catalog__title">barbershop</h3>
           <p class="catalog__text">Сайт салоны красоты. Для мужчин, да.</p>
-          <button type="submit" class="catalog__button">9 900 руб.</button>
+          <button type="submit" class="catalog__button button">9 900 руб.</button>
+          </div>
         </li>
         <li class="catalog__item">
+          <img src="svg/browser.svg" alt="Декоративный элемент имитирующий онко браузера" width="360" height="40" class="catalog__browser">
+          <img src="img/img-mishka.jpg.jpg" alt="Mishka" width="360" height="576" class="catalog__image">
+          <div class="catalog__hidden catalog__wrapper">
           <h3 class="catalog__title">Mishka</h3>
           <p class="catalog__text">Интернет-магазин вязаных игрушек</p>
-          <button type="submit" class="catalog__button">9 900 руб.</button>
+          <button type="submit" class="catalog__button button">9 900 руб.</button>
+          </div>
         </li>
         <li class="catalog__item">
+          <img src="svg/browser.svg" alt="Декоративный элемент имитирующий онко браузера" width="360" height="40" class="catalog__browser">
+          <img src="img/img-aplus.jpg.jpg" alt="A plus" width="360" height="576" class="catalog__image">
+          <div class="catalog__hidden catalog__wrapper">
           <h3 class="catalog__title">A plus</h3>
           <p class="catalog__text">Лендинг курсов повышения квалификации</p>
-          <button type="submit" class="catalog__button">9 900 руб.</button>
+          <button type="submit" class="catalog__button button">9 900 руб.</button>
+          </div>
         </li>
         <li class="catalog__item">
+          <img src="svg/browser.svg" alt="Декоративный элемент имитирующий онко браузера" width="360" height="40" class="catalog__browser">
+          <img src="img/img-kvast.jpg.jpg" alt="Кваст" width="360" height="576" class="catalog__image">
+          <div class="catalog__hidden catalog__wrapper">
           <h3 class="catalog__title">Кваст</h3>
           <p class="catalog__text">Промо-сайт производителя крафтового кваса</p>
-          <button type="submit" class="catalog__button">9 900 руб.</button>
+          <button type="submit" class="catalog__button button">9 900 руб.</button>
+          </div>
         </li>
       </ul>
       <ul class="pagination__list">
