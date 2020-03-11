@@ -56,26 +56,26 @@
         </div>
       </fieldset>
       <fieldset class="filter__group">
-        <legend class="filter__group-title">Сетка:</legend>
+        <legend class="filter__group-title filter__legend">Сетка:</legend>
         <li class="filter__option">
-          <input class="visually-hidden filter-input filter-input__radio" type="radio" name="adaptive"
-            id="filter-adaptive" checked>
+          <input type="radio" class="visually-hidden filter-input filter-input__radio"  name="grid"
+            id="filter-adaptive" >
           <label for="filter-adaptive">Адаптивная</label>
         </li>
-        <li class="filter__option">
-          <input class="visually-hidden filter-input filter-input__radio" type="radio" name="fix"
+        <li class="filter__option filter__option--disabled" >
+          <input type="radio" class="visually-hidden filter-input filter-input__radio"  name="grid"
             id="filter-fix" >
           <label for="filter-fix">Фиксированная</label>
         </li>
         <li class="filter__option">
-          <input class="visually-hidden filter-input filter-input__radio" type="radio" name="rubber"
-            id="filter-rubber" >
+          <input type="radio" class="visually-hidden filter-input filter-input__radio"  name="grid"
+            id="filter-rubber">
           <label for="filter-rubber">Резиновая</label>
         </li>
       </fieldset>
 
-      <fieldset class="filter__group">
-        <legend class="filter__group-title">Особенности:</legend>
+      <fieldset class="filter__group filter__group--last">
+        <legend class="filter__group-title filter__legend">Особенности:</legend>
         <li class="filter__option">
           <input class="visually-hidden filter-input filter-input__checkbox" type="checkbox" name="slider"
             id="filter-slider" checked>
