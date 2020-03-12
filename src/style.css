@@ -926,7 +926,7 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 
   font-family: 'Roboto Regular', Arial, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 18px;
 }
 .catalog__choise:hover,
@@ -1162,7 +1162,9 @@ input[type="radio"].visually-hidden {
   border-radius:5px;
 }
 
-.pagination__item--current {
+.pagination__item--current,
+.pagination__item--current:hover,
+.pagination__item--current:focus {
   width: 44px;
   height: 44px;
   background-color: #ffffff;
@@ -1171,4 +1173,9 @@ input[type="radio"].visually-hidden {
 .pagination__item--next {
   width: 260px;
 
+}
+
+.pagination__item:hover,
+.pagination__item:focus{
+  background-color: #dfdfdf;
 }
