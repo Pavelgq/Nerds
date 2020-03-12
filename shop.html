@@ -48,28 +48,27 @@
         </div>
         <div class="filter__price">
           <div class="filter__price-col">
-            от <input class="filter__price-input input-reset" id="filter-price-min" name="price-min" type="number" min="0" max="15000" step="100" value="2200">
+            от <input class="filter__price-input input-reset" id="filter-price-min" name="price-min" type="number"
+              min="0" max="15000" step="100" value="2200">
           </div>
           <div class="filter__price-col">
-            до <input class="filter__price-input input-reset" id="filter-price-max" name="price-max" type="number" min="0" max="15000" step="100" value="15000">
+            до <input class="filter__price-input input-reset" id="filter-price-max" name="price-max" type="number"
+              min="0" max="15000" step="100" value="15000">
           </div>
         </div>
       </fieldset>
       <fieldset class="filter__group">
         <legend class="filter__group-title filter__legend">Сетка:</legend>
         <li class="filter__option">
-          <input type="radio" class="visually-hidden filter-input filter-input__radio"  name="grid"
-            id="filter-adaptive" >
+          <input type="radio" class="visually-hidden filter-input filter-input__radio" name="grid" id="filter-adaptive">
           <label for="filter-adaptive">Адаптивная</label>
         </li>
-        <li class="filter__option filter__option--disabled" >
-          <input type="radio" class="visually-hidden filter-input filter-input__radio"  name="grid"
-            id="filter-fix" >
+        <li class="filter__option filter__option--disabled">
+          <input type="radio" class="visually-hidden filter-input filter-input__radio" name="grid" id="filter-fix">
           <label for="filter-fix">Фиксированная</label>
         </li>
         <li class="filter__option">
-          <input type="radio" class="visually-hidden filter-input filter-input__radio"  name="grid"
-            id="filter-rubber">
+          <input type="radio" class="visually-hidden filter-input filter-input__radio" name="grid" id="filter-rubber">
           <label for="filter-rubber">Резиновая</label>
         </li>
       </fieldset>
@@ -83,22 +82,22 @@
         </li>
         <li class="filter__option">
           <input class="visually-hidden filter-input filter-input__checkbox" type="checkbox" name="features"
-            id="filter-features" >
+            id="filter-features">
           <label for="filter-features">Блок приемуществ</label>
         </li>
         <li class="filter__option">
           <input class="visually-hidden filter-input filter-input__checkbox" type="checkbox" name="news"
-            id="filter-news" >
+            id="filter-news">
           <label for="filter-news">Новости</label>
         </li>
         <li class="filter__option">
           <input class="visually-hidden filter-input filter-input__checkbox" type="checkbox" name="gallery"
-            id="filter-gallery" >
+            id="filter-gallery">
           <label for="filter-gallery">Галерея</label>
         </li>
         <li class="filter__option">
           <input class="visually-hidden filter-input filter-input__checkbox" type="checkbox" name="busket"
-            id="filter-busket" >
+            id="filter-busket">
           <label for="filter-busket">Корзина</label>
         </li>
       </fieldset>
@@ -109,84 +108,95 @@
       <h2 class="visually-hidden">Список сайтов</h2>
       <div class="catalog__sort">
         <h3 class="catalog__name">Сортировать:</h3>
-        <ul class="catalog__sort-list">
-          <li class="catalog__sort-item"><button type="submit" class="catalog__choise">По цене</button></li>
-          <li class="catalog__sort-item"><button type="submit" class="catalog__choise">По типу</button></li>
-          <li class="catalog__sort-item"><button type="submit" class="catalog__choise">По названию</button></li>
-        </ul>
-        <div class="arrow_container">
-          <button class="increase" type="button">
-              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
+        <div class="catalog__container">
+          <ul class="catalog__sort-list">
+            <li class="catalog__sort-item"><button type="submit" class="catalog__choise catalog__choise--active">По цене</button></li>
+            <li class="catalog__sort-item"><button type="submit" class="catalog__choise">По типу</button></li>
+            <li class="catalog__sort-item"><button type="submit" class="catalog__choise">По названию</button></li>
+          </ul>
+          <div class="arrow_container">
+            <button class="catalog__choise catalog__choise--active" type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                <path fill="#231F20" d="M5.5 10L0 0h11" /></svg>
+            </button>
+            <button class="catalog__choise" type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                <path fill="#231F20" d="M5.5 0L0 10h11z" /></svg>
 
-          </button>
-          
-          <button class="decrease arrow-active" type="button">
-              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
-          </button>
-      </div>
+            </button>
+
+
+          </div>
+        </div>
       </div>
       <ul class="catalog__list">
         <li class="catalog__item">
-          <img src="svg/browser.svg" alt="Декоративный элемент имитирующий онко браузера" width="360" height="40" class="catalog__browser">
+          <img src="svg/browser.svg" alt="Декоративный элемент имитирующий онко браузера" width="360" height="40"
+            class="catalog__browser">
           <img src="img/img-sedona.jpg.jpg" alt="Sedona" width="360" height="576" class="catalog__image">
           <div class="catalog__hidden catalog__wrapper">
             <h3 class="catalog__title">Sedona</h3>
-            <p class="catalog__text">Информационный сайт для туристов</p>
+            <p class="catalog__text">Информационный сайт<br> для туристов</p>
             <button type="submit" class="catalog__button button">9 900 руб.</button>
           </div>
         </li>
         <li class="catalog__item">
-          <img src="svg/browser.svg" alt="Декоративный элемент имитирующий онко браузера" width="360" height="40" class="catalog__browser">
+          <img src="svg/browser.svg" alt="Декоративный элемент имитирующий онко браузера" width="360" height="40"
+            class="catalog__browser">
           <img src="img/img-pink.jpg.jpg" alt="Pink" width="360" height="576" class="catalog__image">
           <div class="catalog__hidden catalog__wrapper">
-          <h3 class="catalog__title">Pink App</h3>
-          <p class="catalog__text">Продуктовый лендинг приложения для iOS и Android</p>
-          <button type="submit" class="catalog__button button">9 900 руб.</button>
+            <h3 class="catalog__title">Pink App</h3>
+            <p class="catalog__text">Продуктовый лендинг приложения для iOS и Android</p>
+            <button type="submit" class="catalog__button button">9 900 руб.</button>
           </div>
         </li>
         <li class="catalog__item">
-          <img src="svg/browser.svg" alt="Декоративный элемент имитирующий онко браузера" width="360" height="40" class="catalog__browser">
+          <img src="svg/browser.svg" alt="Декоративный элемент имитирующий онко браузера" width="360" height="40"
+            class="catalog__browser">
           <img src="img/img-barbershop.jpg.jpg" alt="Barbershop" width="360" height="576" class="catalog__image">
           <div class="catalog__hidden catalog__wrapper">
-          <h3 class="catalog__title">barbershop</h3>
-          <p class="catalog__text">Сайт салоны красоты. Для мужчин, да.</p>
-          <button type="submit" class="catalog__button button">9 900 руб.</button>
+            <h3 class="catalog__title">barbershop</h3>
+            <p class="catalog__text">Сайт салоны красоты. Для мужчин, да.</p>
+            <button type="submit" class="catalog__button button">9 900 руб.</button>
           </div>
         </li>
         <li class="catalog__item">
-          <img src="svg/browser.svg" alt="Декоративный элемент имитирующий онко браузера" width="360" height="40" class="catalog__browser">
+          <img src="svg/browser.svg" alt="Декоративный элемент имитирующий онко браузера" width="360" height="40"
+            class="catalog__browser">
           <img src="img/img-mishka.jpg.jpg" alt="Mishka" width="360" height="576" class="catalog__image">
           <div class="catalog__hidden catalog__wrapper">
-          <h3 class="catalog__title">Mishka</h3>
-          <p class="catalog__text">Интернет-магазин вязаных игрушек</p>
-          <button type="submit" class="catalog__button button">9 900 руб.</button>
+            <h3 class="catalog__title">Mishka</h3>
+            <p class="catalog__text">Интернет-магазин вязаных игрушек</p>
+            <button type="submit" class="catalog__button button">9 900 руб.</button>
           </div>
         </li>
         <li class="catalog__item">
-          <img src="svg/browser.svg" alt="Декоративный элемент имитирующий онко браузера" width="360" height="40" class="catalog__browser">
+          <img src="svg/browser.svg" alt="Декоративный элемент имитирующий онко браузера" width="360" height="40"
+            class="catalog__browser">
           <img src="img/img-aplus.jpg.jpg" alt="A plus" width="360" height="576" class="catalog__image">
           <div class="catalog__hidden catalog__wrapper">
-          <h3 class="catalog__title">A plus</h3>
-          <p class="catalog__text">Лендинг курсов повышения квалификации</p>
-          <button type="submit" class="catalog__button button">9 900 руб.</button>
+            <h3 class="catalog__title">A plus</h3>
+            <p class="catalog__text">Лендинг курсов повышения квалификации</p>
+            <button type="submit" class="catalog__button button">9 900 руб.</button>
           </div>
         </li>
         <li class="catalog__item">
-          <img src="svg/browser.svg" alt="Декоративный элемент имитирующий онко браузера" width="360" height="40" class="catalog__browser">
+          <img src="svg/browser.svg" alt="Декоративный элемент имитирующий онко браузера" width="360" height="40"
+            class="catalog__browser">
           <img src="img/img-kvast.jpg.jpg" alt="Кваст" width="360" height="576" class="catalog__image">
           <div class="catalog__hidden catalog__wrapper">
-          <h3 class="catalog__title">Кваст</h3>
-          <p class="catalog__text">Промо-сайт производителя крафтового кваса</p>
-          <button type="submit" class="catalog__button button">9 900 руб.</button>
+            <h3 class="catalog__title">Кваст</h3>
+            <p class="catalog__text">Промо-сайт производителя крафтового кваса</p>
+            <button type="submit" class="catalog__button button">9 900 руб.</button>
           </div>
         </li>
       </ul>
       <ul class="pagination__list">
-        <li class="pagination__item"><a href="#">1</a></li>
-        <li class="pagination__item pagination__item--current"><a>2</a></li>
+        <li class="pagination__item pagination__item--current"><a href="#">1</a></li>
+        <li class="pagination__item"><a>2</a></li>
         <li class="pagination__item"><a href="#">3</a></li>
         <li class="pagination__item pagination__item--next"><a href="#">Следующая</a></li>
-    </ul>
+      </ul>
     </section>
 
   </div>
