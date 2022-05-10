@@ -1,19 +1,19 @@
 @font-face {
   font-family: "Roboto Regular";
-  src: url('/fonts/web/roboto.woff2') format('woff2'),
-    url('/fonts/web/roboto.woff') format('woff');
+  src: url('../fonts/web/roboto.woff2') format('woff2'),
+    url('../fonts/web/roboto.woff') format('woff');
 }
 
 @font-face {
   font-family: "Roboto Bold";
-  src: url('/fonts/web/robotobold.woff2') format('woff2'),
-    url('/fonts/web/robotobold.woff') format('woff');
+  src: url('../fonts/web/robotobold.woff2') format('woff2'),
+    url('../fonts/web/robotobold.woff') format('woff');
 }
 
 @font-face {
   font-family: "Roboto Medium";
-  src: url('/fonts/web/robotomedium.woff2') format('woff2'),
-    url('/fonts/web/robotomedium.woff') format('woff');
+  src: url('../fonts/web/robotomedium.woff2') format('woff2'),
+    url('../fonts/web/robotomedium.woff') format('woff');
 }
 
 
@@ -647,7 +647,7 @@ input[type="radio"].visually-hidden {
   display: block;
   width: 79px;
   height: 79px;
-  background: #e1e1e1 url("/svg/vk-icon.svg") 50% 50% no-repeat;
+  background: #e1e1e1 url("../svg/vk-icon.svg") 50% 50% no-repeat;
   border-radius: 50%;
 }
 
@@ -666,14 +666,14 @@ input[type="radio"].visually-hidden {
 .social__link--fb:hover,
 .social__link--fb:focus,
 .social__link--fb:active {
-  background-image: url("/svg/fb-icon.svg");
+  background-image: url("../svg/fb-icon.svg");
 }
 
 .social__link--inst,
 .social__link--inst:hover,
 .social__link--inst:focus,
 .social__link--inst:active {
-  background-image: url("/svg/insta-icon.svg");
+  background-image: url("../svg/insta-icon.svg");
 }
 
 .social__link:active {
@@ -1033,7 +1033,7 @@ input[type="radio"].visually-hidden {
   height: 23px;
   top: 0px;
   left: -33px;
-  background-image: url(/svg/checkbox-off.svg);
+  background-image: url(../svg/checkbox-off.svg);
   background-position: 0 0;
   background-repeat: no-repeat;
 }
@@ -1045,7 +1045,7 @@ input[type="radio"].visually-hidden {
   height: 23px;
   top: 0px;
   left: -33px;
-  background-image: url(/svg/checkbox-on.svg);
+  background-image: url(../svg/checkbox-on.svg);
   background-position: 0 0;
   background-repeat: no-repeat;
 }
